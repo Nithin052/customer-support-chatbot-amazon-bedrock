@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "id": "bug-missing-details",
+      "prompt": "The checkout button is not working.",
+      "expected": "Recognize this as a bug report and ask for the missing information needed to reproduce it. Do not create a ticket yet."
+    },
+    {
+      "id": "delivery-question",
+      "prompt": "How long does delivery take?",
+      "expected": "Answer only from the FAQ. Explain that estimated delivery times are shown at checkout and in the shipping confirmation email, and processing typically takes 1\u20132 business days before dispatch."
+    },
+    {
+      "id": "refund-question",
+      "prompt": "When will I receive my refund?",
+      "expected": "Answer only from the FAQ. Explain that refunds are issued to the original payment method after the return is received and inspected and typically take 3\u201310 business days depending on the bank/provider."
+    },
+    {
+      "id": "privacy-question",
+      "prompt": "Do you sell my personal information?",
+      "expected": "Answer only from the FAQ. State that the shop does not sell personal information."
+    },
+    {
+      "id": "other-request",
+      "prompt": "Can you recommend a movie for me?",
+      "expected": "Explain that the support assistant cannot help with the request and refer the customer to the human support line at 1-800-555-0199, Monday\u2013Friday."
+    },
+    {
+      "id": "complete-bug-report",
+      "prompt": "The checkout button does not work. I add an item to my cart, open the cart, and click Checkout, but nothing happens. I am using Chrome on Windows 11 on a laptop.",
+      "expected": "Recognize the bug report has all required details and create a bug ticket, then provide the resulting ticket ID."
+    }
+  ]
+}
